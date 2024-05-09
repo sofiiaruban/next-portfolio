@@ -19,23 +19,24 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After 6 years of working as a{' '}
-        <span className="font-medium">cost estimator</span>, I decided to pursue
-        my passion for programming. I enrolled in a Levi9 Frontend Boost program
-        and learned <span className="font-medium"> web development</span>.{' '}
+        After six years of working as a{' '}
+        <span className="font-medium">cost estimator</span>, I made the decision
+        to follow my passion for programming. I enrolled in a Levi9 Frontend
+        Boost program and delved into{' '}
+        <span className="font-medium"> web development</span>.{' '}
         <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is <span className="font-medium">TypeScript, React</span>. I am also
-        familiar with Next. I am always looking to learn new technologies. I am
-        currently looking for a{' '}
-        <span className="font-medium">full-time position</span> as a frontend
+        problem-solving aspect. I love the feeling of finally figuring out a
+        solution to a problem. My core stack is{' '}
+        <span className="font-medium">TypeScript, React</span>. I am also
+        familiar with Next. I am always looking to learn new technologies.
+        Currently, I am actively seeking a
+        <span className="font-medium"> full-time position</span> as a frontend
         developer.
       </p>
       <p>
-        <span className="italic">When I&apos;m not coding</span>, I enjoy doing
-        yoga, traveling. I also enjoy{' '}
-        <span className="font-medium">learning new things</span>.
+        <span className="italic">Outside of coding,</span> I find joy in
+        practicing yoga, traveling,and continuously seeking opportunities for
+        <span className="font-medium">and personal growth.</span>.
       </p>
     </motion.section>
   )
