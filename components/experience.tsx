@@ -10,16 +10,17 @@ import 'react-vertical-timeline-component/style.min.css'
 import { experiencesData } from '@/lib/data'
 import { useSectionInView } from '@/lib/hooks'
 import Image from 'next/image'
-//import { useTheme } from '@/context/themeContext'
+import { useTheme } from '@/context/themeContext'
 
 export default function Experience() {
   const { ref, inView } = useSectionInView('Experience')
-  //const { theme } = useTheme()
+  const { theme } = useTheme()
+
   return (
     <section
       id="experience"
       ref={ref}
-      className="scroll-mt-28 mb-28 sm:mb-40  z-10"
+      className="scroll-mt-28 mb-28 sm:mb-40 z-10"
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
@@ -28,19 +29,29 @@ export default function Experience() {
             <VerticalTimelineElement
               visible={inView}
               contentStyle={{
-                background: '#f3f4f6',
+                background:
+                  theme === 'light' ? '#f3f4f6' : 'rgba(255, 255, 255, 0.05)',
                 boxShadow: 'none',
                 border: '1px solid rgba(0, 0, 0, 0.05)',
                 textAlign: 'left',
                 padding: '1.3rem 2rem'
               }}
               contentArrowStyle={{
-                borderRight: '0.4rem solid #9ca3af'
+                borderRight:
+                  theme === 'light'
+                    ? '0.4rem solid #9ca3af'
+                    : '0.4rem solid rgba(255, 255, 255, 0.5)'
               }}
               date={item.date}
-              icon={<Image src={item.icon} alt={item.title} />}
+              icon={
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  className="rounded-full"
+                />
+              }
               iconStyle={{
-                background: 'rgba(255, 255, 255, 0.15)',
+                background: 'white',
                 fontSize: '1.5rem'
               }}
             >

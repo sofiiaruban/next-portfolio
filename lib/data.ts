@@ -1,7 +1,5 @@
 import React from 'react'
 import { CgWorkAlt } from 'react-icons/cg'
-//import { FaReact } from 'react-icons/fa'
-//import { LuGraduationCap } from 'react-icons/lu'
 import zdravelifeImg from '@/public/zdrave-life-app.png'
 import beerImg from '@/public/beer-app.png'
 import taskImg from '@/public/task-app.png'
@@ -9,6 +7,7 @@ import mindImg from '@/public/mind-lab.png'
 import roco from '@/public/roko_practicum_logo.jpg'
 import baza from '@/public/baza_trainee_ukraine_logo.png'
 import technorely from '@/public/technorely_logo.jpg'
+
 export const links = [
   {
     name: 'Home',
@@ -42,7 +41,7 @@ export const experiencesData = [
     company: 'Roqo Practicum',
     description: 'Internship on real life project',
     icon: roco,
-    date: '12/2023 - present'
+    date: '12/2023 - 05/2024'
   },
   {
     title: 'Full-Stack Developer',
@@ -72,14 +71,15 @@ export const projectsData = [
       'TypeScript',
       'Framer Motion',
       'Lottie',
-      'i18n'
+      'i18n',
+      'Team Project'
     ],
     imageUrl: mindImg
   },
   {
     title: 'Zdrave Zhittya Cows Shelter',
     description: 'Multilingual Website for Cow Shelters with Admin Panel',
-    tags: ['React', 'Redux', 'TypeScript', 'Tailwind', 'i18n'],
+    tags: ['React', 'Redux', 'TypeScript', 'Tailwind', 'i18n', 'Team Project'],
     imageUrl: zdravelifeImg
   },
   {
