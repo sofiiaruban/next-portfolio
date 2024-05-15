@@ -1,14 +1,12 @@
-import React from 'react'
-import { CgWorkAlt } from 'react-icons/cg'
 import zdravelifeImg from '@/public/zdrave-life-app.png'
-import beerImg from '@/public/beer-app.png'
 import taskImg from '@/public/task-app.png'
 import mindImg from '@/public/mind-lab.png'
+import forecastImg from '@/public/forecast-app.png'
 import roco from '@/public/roko_practicum_logo.jpg'
 import baza from '@/public/baza_trainee_ukraine_logo.png'
 import technorely from '@/public/technorely_logo.jpg'
 
-export const links = [
+export const navLinks = [
   {
     name: 'Home',
     hash: '#home'
@@ -74,25 +72,49 @@ export const projectsData = [
       'i18n',
       'Team Project'
     ],
-    imageUrl: mindImg
+    imageUrl: mindImg,
+    siteUrl: 'https://mindlab-landing.vercel.app/ua',
+    gitHubUrl: 'https://github.com/coldXIII/mindlab'
   },
   {
     title: 'Zdrave Zhittya Cows Shelter',
     description: 'Multilingual Website for Cow Shelters with Admin Panel',
     tags: ['React', 'Redux', 'TypeScript', 'Tailwind', 'i18n', 'Team Project'],
-    imageUrl: zdravelifeImg
+    imageUrl: zdravelifeImg,
+    siteUrl: 'https://zdrave-zyttia.site/',
+    gitHubUrl: 'https://github.com/baza-trainee/cows-shelter-frontend'
   },
   {
-    title: 'Beers App',
-    description: 'App displays a list of beers',
-    tags: ['React', 'TypeScript', 'React-Query', 'Zustand'],
-    imageUrl: beerImg
+    title: 'The Trip Forecasting Weather App',
+    description:
+      'The Trip Weather App helps you monitor weather conditions for your planned trips',
+    tags: [
+      'React',
+      'TS',
+      'Redux',
+      'RTK Query',
+      'Redux-persist',
+      'Vite',
+      'Jest',
+      'Personal Project'
+    ],
+    imageUrl: forecastImg,
+    siteUrl: 'https://sofiiaruban.github.io/trip-app/',
+    gitHubUrl: 'https://github.com/sofiiaruban/trip-app'
   },
   {
     title: 'Task Manager App',
     description: 'Task management application',
-    tags: ['React', 'TypeScript', 'React-Bootstrap', 'Redux'],
-    imageUrl: taskImg
+    tags: [
+      'React',
+      'TypeScript',
+      'React-Bootstrap',
+      'Redux',
+      'Personal Project'
+    ],
+    imageUrl: taskImg,
+    siteUrl: ' https://sofiiaruban.github.io/task-manager-app',
+    gitHubUrl: 'https://github.com/sofiiaruban/task-manager-app'
   }
 ] as const
 
@@ -112,3 +134,9 @@ export const skillsData = [
   'Zustand',
   'Framer Motion'
 ] as const
+
+export enum link {
+  linkedIn = 'https://www.linkedin.com/in/sofiiaruban/',
+  gitHub = 'https://github.com/sofiiaruban/',
+  CV = '/CV_Sofiia_Ruban_Frontend_Developer 03.24.pdf'
+}
