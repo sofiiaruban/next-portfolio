@@ -35,8 +35,8 @@ export default function About() {
       </p>
       <p>
         <span className="italic">Outside of coding,</span> I find joy in
-        practicing yoga, traveling,and continuously seeking opportunities for
-        <span className="font-medium">and personal growth.</span>.
+        practicing yoga, traveling, and continuously seeking opportunities for
+        <span className="font-medium"> personal growth.</span>
       </p>
     </motion.section>
   )
