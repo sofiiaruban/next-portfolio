@@ -5,7 +5,7 @@ import Header from '@/components/header'
 import ActiveSectionContextProvider from '@/context/activeSectionContext'
 import ThemeContextProvider from '@/context/themeContext'
 import Footer from '@/components/footer'
-import ThemeSwitch from '@/components/themeSwitch'
+import ThemeSwitch from '@/components/ui/themeSwitch'
 
 const inter = Inter({ subsets: ['latin'] })
 
