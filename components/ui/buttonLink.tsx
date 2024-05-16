@@ -5,7 +5,7 @@ export default function ButtonLink({ href, icon, title }: ButtonLinkProps) {
   return (
     <a
       href={href}
-      className="group bg-white text-sm border px-3 py-1 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+      className="group text-sm borderBlack bg-white border  border-black px-2 py-1 flex items-center gap-1 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:bg-white/10"
       target="_blank"
     >
       {title}

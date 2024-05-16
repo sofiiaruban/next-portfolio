@@ -4,13 +4,11 @@ import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import ButtonLink from './ui/buttonLink'
+import ButtonLink from './buttonLink'
 import { FaGithubSquare } from 'react-icons/fa'
 import { BsArrowRight } from 'react-icons/bs'
-import TagList from './ui/tagList'
+import TagList from './tagList'
 import { ProjectProps } from '@/lib/types'
-
-
 
 export default function Project({
   title,
@@ -43,7 +41,7 @@ export default function Project({
           <p className="my-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
           </p>
-          <div className="flex gap-2 mb-2">
+          <div className="flex gap-2 mb-3 pl-1">
             <ButtonLink
               href={siteUrl}
               title="Live preview"
