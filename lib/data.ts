@@ -138,5 +138,5 @@ export const skillsData = [
 export enum link {
   linkedIn = 'https://www.linkedin.com/in/sofiiaruban/',
   gitHub = 'https://github.com/sofiiaruban/',
-  CV = '/CV_Sofiia_Ruban_Frontend_Developer 03.24.pdf'
+  CV = '/CV_Sofiia_Ruban_Front-end_Developer_(React JS).pdf'
 }
