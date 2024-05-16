@@ -4,11 +4,13 @@ import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import ButtonLink from './button/buttonLink'
+import ButtonLink from './ui/buttonLink'
 import { FaGithubSquare } from 'react-icons/fa'
 import { BsArrowRight } from 'react-icons/bs'
+import TagList from './ui/tagList'
+import { ProjectProps } from '@/lib/types'
 
-type ProjectProps = (typeof projectsData)[number]
+
 
 export default function Project({
   title,
@@ -55,16 +57,7 @@ export default function Project({
               icon={<FaGithubSquare />}
             />
           </div>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+          <TagList tags={tags} />
         </div>
         <Image
           src={imageUrl}

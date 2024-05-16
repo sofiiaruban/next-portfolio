@@ -7,10 +7,10 @@ import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hooks'
 import { useActiveSectionContext } from '@/context/activeSectionContext'
-import ButtonInternalLink from './button/buttonInternalLink'
-import IconLink from './button/iconLink'
+import ButtonInternalLink from './ui/buttonInternalLink'
+import IconLink from './ui/iconLink'
 import { link } from '@/lib/data'
-import DownloadButton from './button/downloadButton'
+import DownloadButton from './ui/downloadButton'
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.5)
