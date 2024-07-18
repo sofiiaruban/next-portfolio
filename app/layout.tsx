@@ -6,6 +6,7 @@ import ActiveSectionContextProvider from '@/context/activeSectionContext'
 import ThemeContextProvider from '@/context/themeContext'
 import Footer from '@/components/footer'
 import ThemeSwitch from '@/components/ui/themeSwitch'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GJE27Z3E2N"
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-GJE27Z3E2N');
+          `}
+        </Script>
+      </head>
       <body
         className={`${inter.className} text-gray-950 bg-gray-50 relative h-[4000px] pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
