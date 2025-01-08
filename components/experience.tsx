@@ -20,13 +20,14 @@ export default function Experience() {
     <section
       id="experience"
       ref={ref}
-      className="scroll-mt-28 mb-28 sm:mb-40  max-w-[53rem] z-10"
+      className="scroll-mt-28 mb-28 sm:mb-40  w-full z-10"
     >
       <SectionHeading>My experience</SectionHeading>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
+              className="vertical-timeline-element--work"
               visible={inView}
               contentStyle={{
                 background:
