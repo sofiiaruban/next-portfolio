@@ -4,7 +4,7 @@ import mindImg from '@/public/mind-lab.png'
 import forecastImg from '@/public/forecast-app.png'
 import roco from '@/public/roko_practicum_logo.jpg'
 import baza from '@/public/baza_trainee_ukraine_logo.png'
-import technorely from '@/public/technorely_logo.jpg'
+import native from '@/public/native.jpg'
 
 export const navLinks = [
   {
@@ -35,19 +35,18 @@ export const navLinks = [
 
 export const experiencesData = [
   {
+    title: 'Markup Developer (Email)',
+    company: 'Native Apps',
+    description: 'I worked as Email Developer',
+    icon: native,
+    date: '07/2023 - present'
+  },
+  {
     title: 'Front-End Developer',
     company: 'Roqo Practicum',
     description: 'Internship on real life project',
     icon: roco,
     date: '12/2023 - 05/2024'
-  },
-  {
-    title: 'Full-Stack Developer',
-    company: 'Technorely Inc.',
-    description:
-      'The internship program includes a combination of theory sessions and a final project',
-    icon: technorely,
-    date: '11/2023 - 12/2023'
   },
   {
     title: 'Front-End Developer',
